@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hyggelig oelbryggeri på troejborg i en baggaard"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="bryggeri, oel, troejborgbryg, tordenskjoldsgade, hyggeligt, sommer, arrangementer, aktiviteter, events, padel, unge, fællesskab, samvær, moderne, velkommende"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./burger.js" defer></script>
+    <title>Events</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <a class="main_logo" href="index.html">
+        <img class="logo_desktop" src="img/logo_desktop.png" alt="logo"
+      /></a>
+      <ul class="desktop_nav">
+        <li>
+          <div class="dropdown">
+            <div class="hovereffect">
+              <button class="dropbtn">SORTIMENT</button>
+            </div>
+
+            <div class="dropdown-content">
+              <a href="sortiment.html">ALKOHOLFRI ØL</a>
+              <a href="error.html">ØKOLOGISKE ØL</a>
+              <a href="error.html">GAVEÆSKER</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <div class="active">
+              <button class="dropbtn">COMMUNITY</button>
+            </div>
+            <div class="dropdown-content">
+              <a href="events.html">PADEL OG ØL</a>
+              <a href="error.html">ØLSMAGNING</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <div class="hovereffect">
+              <button class="dropbtn">MERCH</button>
+            </div>
+            <div class="dropdown-content">
+              <a href="error.html">SHOP</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <div class="hovereffect">
+              <button class="dropbtn">BLOG</button>
+            </div>
+            <div class="dropdown-content">
+              <a class="text_border" href="blog.html">DRIK MED OMTANKE</a>
+            </div>
+          </div>
+        </li>
+        <li class="om_os">
+          <div class="dropdown">
+            <div class="hovereffect">
+              <button class="dropbtn">OM OS</button>
+            </div>
+            <div class="dropdown-content">
+              <a href="omos.html">VORES HISTORIE</a>
+              <a href="error.html">KONTAKT OS</a>
+            </div>
+          </div>
+        </li>
+        <div class="flex_ikoner">
+          <li>
+            <img class="kurv" src="img/kurv.png" alt="kurv" />
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <div class="header">
+      <div class="container_header">
+        <a href="index.html"
+          ><img class="search_icon" src="img/search.png" alt="search"
+        /></a>
+        <a href="index.html"> <img class="logo" src="img/logo.png" alt="" /></a>
+        <div class="mobil_nav">
+          <button onclick="toggleBurgerMenu()" class="burger_icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-menu-2"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+            </svg>
+          </button>
+          <div id="burger_menu" class="burger_menu">
+            <div class="close_icon">
+              <button onclick="toggleBurgerMenu()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-x"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#000000"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <ul class="burger_nav">
+              <li>
+                <a href="sortiment.html" class="hovereffect">SORTIMENT</a>
+              </li>
+              <li><a href="events.html" class="hovereffect">COMMUNITY</a></li>
+              <li><a href="error.html" class="hovereffect">MERCH</a></li>
+              <li><a href="blog.html" class="hovereffect">BLOG</a></li>
+              <li><a href="omos.html" class="hovereffect">OM OS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="billed_container">
+      <div class="billede-wrapper">
+        <img class="dreng_hop" src="img/dreng_hop.png" alt="padel" />
+      </div>
+      <div class="billede-wrapper billede-wrapper--text">
+        <div class="billede-wrapper--container">
+          <h1 class="padel_h">PADEL OG ØL</h1>
+          <p class="padel_p">
+            Kom og vær med! Bliv en del af vores univers, når vi tager dig med
+            indefor til et hedt omgang spil padel efterfulgt af den saftigste
+            ølsmagning, hvor vi byder på vores forskellige sortiment af lækre
+            alkoholfrie øl.
+          </p>
+        </div>
+        <img class="grøn_rektangel" src="img/grøn_rektangel.png" alt="grøn" />
+      </div>
+    </div>
+    <!-- <h1 class="padel_h">PADEL OG ØL</h1> -->
+    <div class="billeder_drenge_container">
+      <img class="to_drenge" src="img/to_drenge.png" alt="drnege" />
+      <img class="drenge_padel" src="img/drenge_padel.png" alt="padel" />
+    </div>
+    <hr class="solid" />
+    <h2 class="kalender_h">KALENDER</h2>
+    <p class="kalender_p">
+      Herunder ser du hele månedens aktiviteter og sjove arrangementer i det nye
+      år. Skynd dig at book en tid inden dine venner gør det først!
+    </p>
+
+    <h3 class="december">JANUAR 2024</h3>
+    <img class="kalender_img" src="img/kalender.png" alt="kalender" />
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer_col">
+            <h4>links</h4>
+            <ul>
+              <li><a href="sortiment.html">Sortiment</a></li>
+              <li><a href="events.html">Community</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="omos.html">Om os</a></li>
+            </ul>
+          </div>
+          <div class="footer_col">
+            <h4 class="h4">Kontakt</h4>
+            <ul class="kontakt_ul">
+              <li>M. P. Bruuns gade 18</li>
+              <li>+45 60656818</li>
+              <li>Nikolinehald@gmail.com</li>
+            </ul>
+          </div>
+          <div class="footer_col">
+            <h4 class="h4">Sociale medier</h4>
+            <ul>
+              <li><a href="error.html">Facebook</a></li>
+              <li><a href="error.html">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

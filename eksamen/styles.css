@@ -1,0 +1,1622 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@900&family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kufam:wght@900&family=Kumbh+Sans:wght@500;700;900&family=Playfair+Display:wght@500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.hovereffect {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.hovereffect::after {
+  content: "";
+  height: 1.5px;
+  width: 0%;
+  background: black;
+  position: absolute;
+  bottom: 1px;
+  right: 0;
+  transition: width 300ms ease-in, background-color 700ms ease-in-out;
+}
+
+.hovereffect:hover::after {
+  width: 100%;
+  background-color: #3a5536;
+  left: 0;
+}
+
+/*---------- DROPDOWN MENU ----------*/
+
+.dropbtn {
+  background-color: #ffffff;
+  color: black;
+  padding: 3px;
+  font-size: 1rem;
+  font-family: "Kumbh Sans", sans-serif;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  margin-top: 2px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 11px;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: black;
+  padding: 0;
+}
+
+.dropbtn:active .dropbtn {
+  border: none;
+}
+
+/*---------- HEADER ----------*/
+
+.search_icon {
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  width: 6%;
+}
+
+.logo_desktop {
+  display: none;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.container_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Var flex-start før */
+}
+
+.kurv {
+  display: inline-block;
+  height: 24px;
+  width: auto;
+  margin-left: 0;
+}
+
+/* ---------- FORSIDE ----------*/
+
+.logo_forside {
+  width: 100%;
+  position: relative;
+  opacity: 95%;
+}
+.container_drenge {
+  width: 100%;
+  margin-top: -4px;
+}
+.drenge {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  opacity: 70%;
+  bottom: 4px;
+}
+
+.tilmeld_knap {
+  font-family: "Kumbh Sans", sans-serif;
+  position: absolute;
+  font-size: 10px;
+  font-weight: medium;
+  background-color: #3a5536;
+  padding-block: 12px;
+  padding-inline: 6px;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  border-radius: 5px;
+  height: 16px;
+  z-index: 99;
+  top: 55%;
+  display: flex;
+  align-items: center;
+  right: 15%;
+}
+
+.header_fællesskab {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke: #c8e5c3;
+  -webkit-text-stroke-width: 1px;
+  position: absolute;
+  font-size: 30px;
+  padding-block: 10px;
+  padding-inline: 6px;
+  color: transparent;
+  text-align: center;
+  height: 16px;
+  z-index: 99;
+  top: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.events_text {
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  -webkit-text-stroke: #3a5536;
+  -webkit-text-stroke-width: 1px;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.events_brødtext {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  margin: 45px;
+  margin-bottom: 60px;
+}
+
+.events_knap {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: bold;
+  background-color: #c8e5c3;
+  width: 98px;
+  padding-block: 8px;
+  padding-inline: 8px;
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+  font-size: 0.8rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.padel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  width: 50%;
+  opacity: 90%;
+}
+
+.bestsellers_header {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: black;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 80px;
+  -webkit-text-stroke: #3a5536;
+  -webkit-text-stroke-width: 1px;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.bestsellers_p {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+
+  margin: 45px;
+}
+
+.sortiment_knap {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 15px;
+  font-weight: medium;
+  background-color: #3a5536;
+  width: 90px;
+  padding-block: 8px;
+  padding-inline: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 3px;
+  margin-left: 100px;
+}
+
+.logo_wrapper_text {
+  position: relative;
+}
+
+.logo_wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/*---------- KNAP OVENPÅ DRENG_HOP BILLEDET ----------*/
+
+.knap-wrapper-container {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  top: 710px;
+  left: 60%;
+}
+
+.knap-wrapper-text {
+  position: relative;
+}
+
+.knap-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.no_h_club_øl {
+  margin-top: 110px;
+  width: 40%;
+  margin-left: 20px;
+  height: 80%;
+}
+
+.padel_øl {
+  width: 75%;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.jul_øl {
+  width: 70%;
+  margin-left: 60px;
+}
+
+.jul_padel_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.øl_container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 200px;
+}
+
+/*---------- FOOTER ----------*/
+
+ul {
+  list-style: none;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.footer {
+  background: linear-gradient(to right, #3a5536, #658044);
+  padding: 40px;
+  width: 100%;
+  position: absolute;
+  border-top-left-radius: 70px;
+  line-height: 20px;
+}
+
+.footer_col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer_col h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer_col h4::before {
+  content: "";
+  left: 0;
+  bottom: -10px;
+  background-color: #dae2d9;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer_col ul li a {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+}
+
+.footer_col ul li a:hover {
+  color: #bbbbbb;
+  background-color: transparent;
+  padding-left: 8px;
+  transition: all ease 0.4s;
+}
+
+.kontakt_ul li {
+  color: #bbbbbb;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.billed_container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*---------- COMMUNITY SIDE ----------*/
+
+.dreng_hop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  opacity: 80%;
+}
+
+.grøn_rektangel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.padel_h {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 38px;
+  -webkit-text-stroke: #c8e5c3;
+  -webkit-text-stroke-width: 2px;
+  color: #3a5536;
+  top: 20%;
+  left: 50%;
+  z-index: 2;
+}
+
+.padel_p {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 60px;
+  width: 80%;
+}
+
+/* ---------- TEKST OVENPÅ BILLEDE ----------*/
+
+.billede-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.billede-wrapper--text {
+  position: relative;
+}
+
+.billede-wrapper--container {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  top: 25%;
+  left: 10%;
+}
+
+.to_drenge {
+  display: none;
+}
+
+.drenge_padel {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 90px;
+  opacity: 80%;
+}
+
+.kalender_h {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #3a5536;
+  font-size: 36px;
+  font-weight: black;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.december {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #605e5e;
+  font-size: 18px;
+  font-weight: black;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.kalender_p {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: medium;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 75%;
+}
+
+.kalender_img {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  margin-bottom: 90px;
+}
+
+/*---------- SORTIMENT SIDE ----------*/
+
+.sortiment_header {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 34px;
+  -webkit-text-stroke: #cd7ea9;
+  -webkit-text-stroke-width: 1px;
+  color: #cd7ea9;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.alkoholfri_øl_text {
+  display: flex;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: medium;
+  font-size: 26px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.text_sortiment {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  margin-bottom: 70px;
+}
+
+.filter {
+  display: none;
+}
+
+/*---------- STYLING AF ALLE ØLLENE ----------*/
+
+.sortiment_nhc {
+  display: block;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border: 1px solid red;
+  border-color: black;
+  border-style: solid;
+  margin-bottom: 10px;
+}
+
+.øl_text {
+  display: flex;
+  justify-content: center;
+  font-family: "Kufam", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pris {
+  display: flex;
+  justify-content: center;
+  font-family: "Kufam", sans-serif;
+  font-size: 11px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.button_øl {
+  text-decoration: none;
+  background-color: #3a5536;
+  color: #c8e5c3;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Kufam", sans-serif;
+  font-size: 12px;
+  margin-top: 12px;
+  margin-bottom: 60px;
+  width: 60px;
+  padding: 8px;
+  border-radius: 3px;
+}
+.button_øll {
+  text-decoration: none;
+}
+
+/*---------- STYLING ØLSIDER ----------*/
+
+.øl_køb {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border: 1px solid black;
+  margin-top: 100px;
+}
+
+.øl_header {
+  font-family: "Kufam", sans-serif;
+  -webkit-text-stroke: #d88d35;
+  -webkit-text-stroke-width: 1px;
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 19px;
+  margin-top: 10px;
+}
+
+.øl_p {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  margin-left: 19px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.køb_knap {
+  margin-left: 19px;
+  margin-top: 10px;
+  background-color: #d88d35;
+  color: #ffffff;
+  font-family: "Kufam", sans-serif;
+  font-size: 12px;
+  margin-bottom: 100px;
+  width: 65px;
+  padding: 8px;
+  border-radius: 3px;
+  border-bottom: #3a5536;
+}
+
+.padel_øl_head {
+  font-family: "Kufam", sans-serif;
+  -webkit-text-stroke: #33384c;
+  -webkit-text-stroke-width: 1px;
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 19px;
+  margin-top: 10px;
+}
+
+.padel_øl_knap {
+  margin-left: 19px;
+  margin-top: 10px;
+  background-color: #33384c;
+  color: #ffffff;
+  font-family: "Kufam", sans-serif;
+  font-size: 12px;
+  margin-bottom: 100px;
+  width: 65px;
+  padding: 8px;
+  border-radius: 3px;
+  border-bottom: #3a5536;
+}
+
+.community_header {
+  font-family: "Kufam", sans-serif;
+  -webkit-text-stroke: #c87776;
+  -webkit-text-stroke-width: 1px;
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 19px;
+  margin-top: 10px;
+}
+
+.community_knap {
+  margin-left: 19px;
+  margin-top: 10px;
+  background-color: #c87776;
+  color: #ffffff;
+  font-family: "Kufam", sans-serif;
+  font-size: 12px;
+  margin-bottom: 100px;
+  width: 65px;
+  padding: 8px;
+  border-radius: 3px;
+  border-bottom: #3a5536;
+}
+
+.pilsner_header {
+  font-family: "Kufam", sans-serif;
+  -webkit-text-stroke: #482c26;
+  -webkit-text-stroke-width: 1px;
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 19px;
+  margin-top: 10px;
+}
+
+.pilsner_knap {
+  margin-left: 19px;
+  margin-top: 10px;
+  background-color: #482c26;
+  color: #ffffff;
+  font-family: "Kufam", sans-serif;
+  font-size: 12px;
+  margin-bottom: 100px;
+  width: 65px;
+  padding: 8px;
+  border-radius: 3px;
+  border-bottom: #3a5536;
+}
+
+.lms_header {
+  font-family: "Kufam", sans-serif;
+  -webkit-text-stroke: #658044;
+  -webkit-text-stroke-width: 1px;
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 19px;
+  margin-top: 10px;
+}
+
+.lms_knap {
+  margin-left: 19px;
+  margin-top: 10px;
+  background-color: #96d8a2;
+  color: #ffffff;
+  font-family: "Kufam", sans-serif;
+  font-size: 12px;
+  margin-bottom: 100px;
+  width: 65px;
+  padding: 8px;
+  border-radius: 3px;
+  border-bottom: #3a5536;
+}
+
+.beer_header {
+  font-family: "Kufam", sans-serif;
+  -webkit-text-stroke: #c9119b;
+  -webkit-text-stroke-width: 1px;
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 19px;
+  margin-top: 10px;
+}
+
+.beer_knap {
+  margin-left: 19px;
+  margin-top: 10px;
+  background-color: #df5bbe;
+  color: #ffffff;
+  font-family: "Kufam", sans-serif;
+  font-size: 12px;
+  margin-bottom: 100px;
+  width: 65px;
+  padding: 8px;
+  border-radius: 3px;
+  border-bottom: #3a5536;
+}
+
+/*---------- BLOG SIDE ----------*/
+
+.blog_header {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  -webkit-text-stroke: #cd7ea9;
+  -webkit-text-stroke-width: 2px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.blog_text {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  width: 75%;
+}
+
+.billede_tyga {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  opacity: 80%;
+  width: 60%;
+}
+
+.mission_header {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #3a5536;
+  font-size: 25px;
+  font-weight: black;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.mission_p {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  width: 85%;
+}
+
+.mission_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  border: 1px solid red;
+  border-color: black;
+  border-style: solid;
+}
+
+.bryghus_img {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 110px;
+  margin-bottom: 100px;
+  opacity: 80%;
+  width: 70%;
+}
+
+.titel_liste {
+  display: flex;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+  font-weight: medium;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.liste_p {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.liste_container {
+  border: 1px solid red;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  margin-bottom: 100px;
+  margin-top: 125px;
+}
+
+/*---------- STYLING AF HORISONTAL LINJE ----------*/
+
+hr.solid {
+  border-top: 1px solid black;
+}
+
+/*---------- OM OS SIDE ----------*/
+
+.historie_header {
+  display: flex;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 40px;
+  -webkit-text-stroke: #3a5536;
+  -webkit-text-stroke-width: 2px;
+  color: #ffffff;
+}
+
+.historie_p {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  width: 75%;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+.beer_img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  width: 55%;
+}
+
+.værdier_p {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 75%;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+.bryg_img {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  width: 55%;
+}
+
+.velkommen_header {
+  display: flex;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -webkit-text-stroke: #605e5e;
+  -webkit-text-stroke-width: 2.5px;
+  color: #ffffff;
+}
+
+.velkommen_text {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  width: 75%;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+.brygmand_img {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  width: 55%;
+}
+
+.udvalg_text {
+  margin-left: 70px;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+}
+.knap_udvalg {
+  margin-left: 8px;
+  text-decoration: underline;
+  background-color: transparent;
+  font-family: "Playfair Display", serif;
+  margin-top: 1px;
+  margin-bottom: 50px;
+}
+
+.knap_container {
+  display: flex;
+  flex-direction: row;
+}
+
+/*---------- ERROR SIDE ----------*/
+
+.error_h {
+  font-size: 25px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.error_button {
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+
+.error_øl {
+  width: 32%;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* -------------------- BURGER MENU --------------------*/
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktop_nav {
+  gap: 16px;
+  padding-right: 16px;
+  display: none;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.desktop_nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  display: flex;
+}
+
+.close_icon {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.close_icon button {
+  background-color: transparent;
+}
+
+.burger_icon {
+  border: none;
+  background-color: transparent;
+}
+
+.burger_menu {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.burger_menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.burger_nav {
+  font-weight: bold;
+}
+
+.burger_menu ul li a {
+  font-size: 3rem;
+  font-family: "Kumbh Sans", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.burger_menu--open {
+  display: flex;
+}
+
+/*----------- STYLING AF NAVIGATIONS BAR ----------*/
+
+li a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.active {
+  border-bottom: 1px solid #3a5536;
+  border-color: #3a5536;
+  border-style: solid;
+  padding: 0;
+  color: #3a5536;
+}
+
+@media only screen and (min-width: 400px) {
+  .header_fællesskab {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) /*------- TIL DESKTOP ------*/ {
+  /*---------- NAVIGATIONSBAR OG BURGER MENU ----------*/
+
+  .desktop_nav {
+    display: flex;
+  }
+
+  .burger_icon {
+    display: none;
+  }
+
+  .menu_button {
+    display: none;
+  }
+
+  .logo_desktop {
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 4px;
+    margin-left: 6px;
+  }
+
+  .logo {
+    display: none;
+    width: 25%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 920px;
+  }
+
+  .search_icon {
+    display: none;
+    width: 4%;
+    margin-top: 17px;
+  }
+
+  /*---------- FORSIDE ----------*/
+
+  .logo_forside {
+    width: 50%;
+    margin-bottom: 4px;
+  }
+
+  .container_drenge {
+    max-width: 50%;
+    margin-top: 0;
+  }
+
+  .drenge {
+    max-width: 100%;
+    margin-top: 4px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .events_container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+
+  .events_brødtext {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-size: 18px;
+  }
+  .events_knap {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 250px;
+  }
+  .padel {
+    width: 23%;
+    margin-left: 70px;
+  }
+
+  .bestsellers_header {
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
+  .bestsellers_p {
+    display: flex;
+    justify-content: center;
+    margin-left: 75px;
+    width: 80%;
+    margin-right: 0;
+  }
+
+  .no_h_club_øl {
+    width: 40%;
+    height: 40%;
+    margin-left: 0;
+    margin-top: 200px;
+  }
+
+  .padel_øl {
+    width: 80%;
+  }
+
+  .jul_øl {
+    width: 80%;
+    margin-top: 100px;
+  }
+
+  .øl_text_container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    margin-top: 60px;
+  }
+
+  .jul_padel_container {
+    margin-right: 40%;
+    width: 700px;
+    margin-top: 100px;
+  }
+
+  /*---------- COMMUNITY SIDE ----------*/
+
+  .dreng_hop {
+    width: 50%;
+    height: 100%;
+  }
+
+  .grøn_rektangel {
+    width: 50%;
+  }
+
+  .billed_container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 532px;
+  }
+
+  .to_drenge {
+    display: block;
+    width: 38%;
+    margin-top: 160px;
+    margin-left: 50px;
+    border-radius: 4px;
+    border-color: #3a5536;
+    margin-bottom: 150px;
+    border: 1px solid red;
+    border-color: #3a5536;
+    border-style: solid;
+  }
+
+  .drenge_padel {
+    display: block;
+    width: 30%;
+    margin-top: 160px;
+    margin-left: 200px;
+  }
+
+  .billeder_drenge_container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .kalender_p {
+    width: 45%;
+    font-size: 17px;
+  }
+
+  .kalender_img {
+    width: 55%;
+  }
+
+  .padel_h {
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+  }
+
+  .padel_p {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-top: 50px;
+    font-size: 25px;
+  }
+
+  .billede-wrapper {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  /*---------- SORITMENT SIDE ----------*/
+
+  .text_sortiment {
+    margin-bottom: 35px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex_ølside {
+    margin-bottom: 150px;
+  }
+
+  .sortiment_nhc {
+    width: 60%;
+    margin-top: 0;
+  }
+
+  .nhc {
+    width: 30%;
+    margin-bottom: 50px;
+  }
+
+  .flex_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  }
+
+  .billed_t_container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /*---------- BLOG SIDE ---------*/
+
+  .blog_text {
+    font-size: 17px;
+    width: 70%;
+    display: flex;
+    width: 60%;
+  }
+
+  .billed_t_container {
+    width: 90%;
+  }
+
+  .blog_header {
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .billede_tyga {
+    width: 90%;
+    margin-top: 160px;
+    margin-right: 300px;
+  }
+
+  .bryghus_img {
+    width: 31%;
+  }
+
+  .mission_container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 90px;
+    margin-top: 0;
+  }
+
+  .mission_text {
+    width: 45%;
+    height: 350px;
+    margin-top: 110px;
+    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 1px solid #3a5536;
+  }
+
+  .mission_header {
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+
+  .mission_p {
+    font-size: 14px;
+    margin-top: 0;
+    width: 97%;
+  }
+
+  .liste_container {
+    width: 50%;
+    margin-top: 120px;
+    margin-bottom: 100px;
+  }
+
+  .titel_liste {
+    font-size: 27px;
+    padding: 20px;
+  }
+
+  .liste_container {
+    padding: 30px;
+  }
+
+  .liste_p {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  /*---------- STYLING AF HORISONTAL LINJE ----------*/
+
+  hr.solid_os {
+    display: none;
+  }
+
+  hr.solidd {
+    border-top: 1px solid black;
+    display: flex;
+  }
+
+  hr.solid {
+    display: flex;
+  }
+
+  /*---------- OM OS SIDE ----------*/
+
+  .beer_img {
+    width: 50%;
+    height: 350px;
+    margin-right: 90px;
+    margin-top: 140px;
+  }
+
+  .historie_p {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 100px;
+    width: 60%;
+    font-size: 25px;
+    padding: 0;
+  }
+
+  .historie_header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 60px;
+  }
+
+  .flex_omos {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .værdier_container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .bryg_img {
+    width: 25%;
+    height: 350px;
+    margin-left: 90px;
+    margin-top: 90px;
+  }
+
+  .værdier_p {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    font-size: 25px;
+    margin-top: 120px;
+  }
+
+  .velkommen_container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .brygmand_img {
+    margin-top: 200px;
+    margin-right: 100px;
+    width: 30%;
+    height: 500px;
+  }
+
+  .velkommen_text {
+    margin-top: 130px;
+    margin-left: 100px;
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .velkommen_header {
+    display: flex;
+    margin-left: 190px;
+    width: 100%;
+    font-size: 50px;
+  }
+
+  .udvalg_text {
+    margin-left: 100px;
+  }
+
+  /*---------- STYLING AF ØL SIDERNE ----------*/
+
+  .flex_ølside {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .øl_køb {
+    margin-top: 130px;
+    margin-left: 30px;
+    width: 40%;
+    height: 40%;
+  }
+
+  .ølside_text {
+    margin-top: 118px;
+    margin-left: 80px;
+  }
+  .margin_knap {
+    margin-bottom: 150px;
+  }
+
+  .font_head {
+    font-size: 22px;
+  }
+
+  .øl_p {
+    width: 70%;
+  }
+
+  .community_header {
+    font-size: 22px;
+  }
+}
+
+.billede-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}

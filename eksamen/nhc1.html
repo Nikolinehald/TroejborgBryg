@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hyggelig oelbryggeri på troejborg i en baggaard"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="bryggeri, oel, troejborgbryg, tordenskjoldsgade, hyggeligt, sommer, arrangementer, aktiviteter, events, padel, unge, fællesskab, samvær, moderne, velkommende"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./burger.js" defer></script>
+    <title>Sortiment</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <a class="main_logo" href="index.html">
+        <img class="logo_desktop" src="img/logo_desktop.png" alt="logo"
+      /></a>
+      <ul class="desktop_nav">
+        <li>
+          <div class="dropdown">
+            <div class="active">
+              <button class="dropbtn">SORTIMENT</button>
+            </div>
+
+            <div class="dropdown-content">
+              <a href="sortiment.html">ALKOHOLFRI ØL</a>
+              <a href="error.html">ØKOLOGISKE ØL</a>
+              <a href="error.html">GAVEÆSKER</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <div class="hovereffect">
+              <button class="dropbtn">COMMUNITY</button>
+            </div>
+            <div class="dropdown-content">
+              <a href="events.html">PADEL OG ØL</a>
+              <a href="error.html">ØLSMAGNING</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <div class="hovereffect">
+              <button class="dropbtn">MERCH</button>
+            </div>
+            <div class="dropdown-content">
+              <a href="error.html">SHOP</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <div class="hovereffect">
+              <button class="dropbtn">BLOG</button>
+            </div>
+            <div class="dropdown-content">
+              <a class="text_border" href="blog.html">DRIK MED OMTANKE</a>
+            </div>
+          </div>
+        </li>
+        <li class="om_os">
+          <div class="dropdown">
+            <div class="hovereffect">
+              <button class="dropbtn">OM OS</button>
+            </div>
+            <div class="dropdown-content">
+              <a href="omos.html">VORES HISTORIE</a>
+              <a href="error.html">KONTAKT OS</a>
+            </div>
+          </div>
+        </li>
+        <div class="flex_ikoner">
+          <li>
+            <img class="kurv" src="img/kurv.png" alt="kurv" />
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <div class="header">
+      <div class="container_header">
+        <a href="index.html"
+          ><img class="search_icon" src="img/search.png" alt="search"
+        /></a>
+        <a href="index.html"> <img class="logo" src="img/logo.png" alt="" /></a>
+        <div class="mobil_nav">
+          <button onclick="toggleBurgerMenu()" class="burger_icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-menu-2"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+            </svg>
+          </button>
+          <div id="burger_menu" class="burger_menu">
+            <div class="close_icon">
+              <button onclick="toggleBurgerMenu()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-x"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#000000"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <ul class="burger_nav">
+              <li>
+                <a href="sortiment.html" class="hovereffect">SORTIMENT</a>
+              </li>
+              <li><a href="events.html" class="hovereffect">COMMUNITY</a></li>
+              <li><a href="error.html" class="hovereffect">MERCH</a></li>
+              <li><a href="blog.html" class="hovereffect">BLOG</a></li>
+              <li><a href="omos.html" class="hovereffect">OM OS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="solid" />
+    <div class="flex_ølside">
+      <img class="øl_køb" src="img/no_hangoverclub.png" alt="øl" />
+      <div class="ølside_text">
+        <h1 class="øl_header font_head">NO HANGOVER CLUB</h1>
+        <p class="øl_p">
+          No Hangover Club er en forfriskende alkoholfri øl med en sofistikeret
+          og forførende smag af passion. <br />
+          <br />
+          Med sit hint af passion giver den en lækker og frugtig nuance til
+          oplevelsen, og dens alkoholfrie karakter gør den perfekt til enhver
+          lejlighed, hvor man ønsker at nyde en øl, men stadig holde sig frisk
+          og klar. <br />
+          <br />
+          No Hangover Club er den ideelle følgesvend, der leverer smagen af en
+          traditionel øl uden konsekvenserne dagen derpå.
+        </p>
+        <p class="øl_p">Pris: 27,95 DKK</p>
+        <button class="køb_knap margin_knap">Køb nu</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer_col">
+            <h4>links</h4>
+            <ul>
+              <li><a href="sortiment.html">Sortiment</a></li>
+              <li><a href="events.html">Community</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="omos.html">Om os</a></li>
+            </ul>
+          </div>
+          <div class="footer_col">
+            <h4 class="h4">Kontakt</h4>
+            <ul class="kontakt_ul">
+              <li>M. P. Bruuns gade 18</li>
+              <li>+45 60656818</li>
+              <li>Nikolinehald@gmail.com</li>
+            </ul>
+          </div>
+          <div class="footer_col">
+            <h4 class="h4">Sociale medier</h4>
+            <ul>
+              <li><a href="error.html">Facebook</a></li>
+              <li><a href="error.html">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
